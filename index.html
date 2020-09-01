@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Calculator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-</head>
-<body>
-	<!--		Nav bar 		-->
-	
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
-</nav>
+<html lang="en">
 
-<!--  	End of navbar -->
-<div class="container">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<button class="btn btn-primary" id="menu-toggle">X</button>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Calculator</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Simple</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Trigonometric</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Logarithmic</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Complex</a><hr>
+        <a href="about.html" class="list-group-item list-group-item-action bg-light">About</a>
+        <a href="contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">    
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="container">
 	<input type="text" placeholder="Enter 1st number" id="num1" class="form-control"><br><br>
 
 	<input type="text" placeholder="Enter 2nd number" id="num2" class="form-control"><br><br>
@@ -44,5 +70,22 @@
 </div>
 </div>
 <script type="text/javascript" src="js/jfile.js"></script>
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/jfile.js"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
 </body>
+
 </html>
